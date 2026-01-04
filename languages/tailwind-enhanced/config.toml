@@ -1,0 +1,124 @@
+name = "TailwindCSS Enhanced"
+scope = "source.tailwind"
+injection_regex = "tailwind"
+file_types = [
+    "html",
+    "htm",
+    "xhtml",
+    "jsx",
+    "tsx",
+    "js",
+    "ts",
+    "vue",
+    "svelte",
+    "astro",
+    "php",
+    "erb",
+    "heex",
+    "eex",
+    "twig",
+    "blade",
+    "md",
+    "mdx",
+    "css",
+    "scss",
+    "sass",
+    "less",
+    "styl"
+]
+
+[language_servers]
+tailwindcss-language-server = { name = "tailwindcss-language-server" }
+
+[highlights]
+enabled = true
+
+[auto_indent]
+enabled = true
+
+[bracket_matching]
+enabled = true
+
+[outline]
+enabled = true
+
+[completion]
+enabled = true
+
+[code_actions]
+enabled = true
+
+[hover]
+enabled = true
+
+[diagnostics]
+enabled = true
+
+[formatting]
+enabled = true
+
+[inlay_hints]
+enabled = true
+
+# Additional configuration for TailwindCSS class detection
+[tailwind]
+class_attributes = [
+    "class",
+    "className",
+    "ngClass",
+    "class:list",
+    ":class",
+    "v-bind:class"
+]
+
+experimental_class_regex = [
+    "tw`([^`]*)",
+    "tw=\"([^\"]*)",
+    "tw={\"([^\"}]*)",
+    "tw\\.\\w+`([^`]*)",
+    "tw\\(.*?\\)`([^`]*)",
+    "classNames\\s*\\(\\s*['\"`]([^'\"`]*)['\"`]",
+    "cva\\s*\\([^)]*['\"`]([^'\"`]*)['\"`]",
+    "cn\\s*\\([^)]*['\"`]([^'\"`]*)['\"`]"
+]
+
+# Framework-specific configurations
+[frameworks.nextjs]
+files = ["pages/**", "src/pages/**", "app/**", "src/app/**", "components/**", "src/components/**"]
+extensions = ["js", "jsx", "ts", "tsx"]
+
+[frameworks.nuxtjs]
+files = ["pages/**", "components/**", "layouts/**", "plugins/**", "middleware/**"]
+extensions = ["vue", "js", "ts"]
+
+[frameworks.react]
+files = ["src/**", "components/**"]
+extensions = ["js", "jsx", "ts", "tsx"]
+
+[frameworks.vue]
+files = ["src/**", "components/**", "pages/**"]
+extensions = ["vue", "js", "ts"]
+
+[frameworks.svelte]
+files = ["src/**", "routes/**", "lib/**"]
+extensions = ["svelte", "js", "ts"]
+
+[frameworks.astro]
+files = ["src/**", "pages/**", "components/**"]
+extensions = ["astro", "js", "ts", "jsx", "tsx"]
+
+[frameworks.angular]
+files = ["src/**", "projects/**"]
+extensions = ["html", "ts", "js"]
+
+[frameworks.laravel]
+files = ["resources/**", "app/**"]
+extensions = ["php", "blade.php", "html"]
+
+[frameworks.rails]
+files = ["app/**", "config/**"]
+extensions = ["erb", "html.erb", "html"]
+
+[frameworks.phoenix]
+files = ["lib/**", "priv/**", "assets/**"]
+extensions = ["heex", "eex", "html.heex", "html.eex"]

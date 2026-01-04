@@ -1,0 +1,140 @@
+{
+  "lsp": {
+    "tailwindcss-language-server": {
+      "settings": {
+        "tailwindCSS": {
+          "classAttributes": [
+            "class",
+            "className",
+            "ngClass",
+            "class:list",
+            ":class",
+            "v-bind:class"
+          ],
+          "lint": {
+            "cssConflict": "warning",
+            "invalidApply": "error",
+            "invalidScreen": "error",
+            "invalidVariant": "error",
+            "invalidConfigPath": "error",
+            "invalidTailwindDirective": "error",
+            "recommendedVariantOrder": "warning"
+          },
+          "validate": true,
+          "colorDecorators": true,
+          "suggestions": true,
+          "hovers": true,
+          "codeActions": true,
+          "experimental": {
+            "classRegex": [
+              "tw`([^`]*)",
+              "tw=\"([^\"]*)",
+              "tw={\"([^\"}]*)",
+              "tw\\.\\w+`([^`]*)",
+              "tw\\(.*?\\)`([^`]*)",
+              "classNames\\s*\\(\\s*['\"`]([^'\"`]*)['\"`]",
+              "cva\\s*\\([^)]*['\"`]([^'\"`]*)['\"`]",
+              "cn\\s*\\([^)]*['\"`]([^'\"`]*)['\"`]",
+              "clsx\\s*\\([^)]*['\"`]([^'\"`]*)['\"`]"
+            ]
+          },
+          "includeLanguages": {
+            "eex": "html",
+            "heex": "html",
+            "svelte": "html",
+            "vue": "html",
+            "astro": "html",
+            "typescript": "javascript",
+            "typescriptreact": "javascript"
+          },
+          "emmetCompletions": false,
+          "files": {
+            "exclude": [
+              "**/.git/**",
+              "**/node_modules/**",
+              "**/.hg/**",
+              "**/.svn/**",
+              "**/dist/**",
+              "**/build/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["typescript-language-server", "tailwindcss-language-server"]
+    },
+    "TSX": {
+      "language_servers": ["typescript-language-server", "tailwindcss-language-server"]
+    },
+    "JavaScript": {
+      "language_servers": ["typescript-language-server", "tailwindcss-language-server"]
+    },
+    "JSX": {
+      "language_servers": ["typescript-language-server", "tailwindcss-language-server"]
+    },
+    "Vue": {
+      "language_servers": ["volar", "tailwindcss-language-server"]
+    },
+    "Svelte": {
+      "language_servers": ["svelte-language-server", "tailwindcss-language-server"]
+    },
+    "HTML": {
+      "language_servers": ["vscode-html-language-server", "tailwindcss-language-server"]
+    },
+    "CSS": {
+      "language_servers": ["vscode-css-language-server", "tailwindcss-language-server"]
+    },
+    "SCSS": {
+      "language_servers": ["vscode-css-language-server", "tailwindcss-language-server"]
+    },
+    "Astro": {
+      "language_servers": ["astro-language-server", "tailwindcss-language-server"]
+    }
+  },
+  "formatter": {
+    "external": {
+      "command": "prettier",
+      "arguments": ["--stdin-filepath", "{buffer_path}"]
+    },
+    "prettier": {
+      "plugins": ["prettier-plugin-tailwindcss"]
+    }
+  },
+  "code_actions_on_format": {
+    "source.organizeImports": true,
+    "source.fixAll": true
+  },
+  "file_types": {
+    "TypeScript": ["ts", "tsx"],
+    "JavaScript": ["js", "jsx", "mjs", "cjs"],
+    "Vue": ["vue"],
+    "Svelte": ["svelte"],
+    "Astro": ["astro"],
+    "PHP": ["php", "blade.php"],
+    "ERB": ["erb", "html.erb"],
+    "EEX": ["eex", "html.eex"],
+    "HEEX": ["heex", "html.heex"]
+  },
+  "auto_install_extensions": {
+    "tailwindcss-enhanced": true
+  },
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true
+  },
+  "completion": {
+    "documentation": true,
+    "resolve_completion_documentation": true
+  },
+  "theme": "One Dark",
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 14,
+  "ui_font_size": 16,
+  "terminal": {
+    "working_directory": "current_project_directory"
+  }
+}

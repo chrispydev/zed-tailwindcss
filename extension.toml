@@ -1,0 +1,10 @@
+id = "tailwindcss-enhanced"
+name = "TailwindCSS Enhanced"
+version = "0.1.0"
+schema_version = 1
+authors = ["Christian Yaw Owusu <christianowusu44@gmail.com>"]
+description = "Enhanced TailwindCSS support for all frontend frameworks including Next.js, Nuxt.js, Vue, Svelte, and more"
+repository = "https://github.com/chrispydev/zed-tailwindcss"
+
+[wasm]
+path = "target/wasm32-wasip1/release/zed_tailwindcss.wasm"
