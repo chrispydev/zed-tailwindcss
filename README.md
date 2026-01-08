@@ -38,27 +38,32 @@ A comprehensive Zed extension that enhances TailwindCSS support across all front
 ### Development Installation
 
 1. Clone this repository:
+
    ```bash
    git clone https://github.com/yourusername/zed-tailwindcss.git
    cd zed-tailwindcss
    ```
 
 2. Install Rust (if not already installed):
+
    ```bash
    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
    ```
 
 3. Add WebAssembly target:
+
    ```bash
    rustup target add wasm32-wasip1
    ```
 
 4. Build the extension:
+
    ```bash
    cargo build --target wasm32-wasip1 --release
    ```
 
    Or use the build script:
+
    ```bash
    ./build.sh
    ```
@@ -73,19 +78,21 @@ A comprehensive Zed extension that enhances TailwindCSS support across all front
 
 ### Automatic Configuration
 
-The extension automatically detects your project type and applies appropriate configurations. No manual setup required!
+The extension automatically detects your project type and applies appropriate configurations.. No manual setup required!
 
 ### Snippets
 
 Type any of these prefixes and press Tab to expand:
 
 #### Layout & Positioning
+
 - `tw-flex-center` → `flex items-center justify-center`
 - `tw-grid-center` → `grid place-items-center`
 - `tw-abs-center` → Absolute positioning center
 - `tw-full` → `w-full h-full`
 
 #### Components
+
 - `tw-btn-primary` → Primary button styling
 - `tw-btn-secondary` → Secondary button styling
 - `tw-card` → Basic card component
@@ -95,18 +102,21 @@ Type any of these prefixes and press Tab to expand:
 - `tw-modal-overlay` → Modal overlay
 
 #### Effects & Animations
+
 - `tw-hover-transition` → Smooth hover transition
 - `tw-shadow-hover` → Shadow effect on hover
 - `tw-spinner` → Loading spinner animation
 - `tw-gradient` → Gradient background
 
 #### Responsive Design
+
 - `tw-container` → Responsive container
 - `tw-text-responsive` → Responsive text sizing
 - `tw-grid-layout` → Responsive grid layout
 - `tw-padding-responsive` → Responsive padding
 
 #### Alerts & States
+
 - `tw-alert-success` → Success alert styling
 - `tw-alert-error` → Error alert styling
 - `tw-focus` → Focus ring styling
@@ -137,9 +147,9 @@ const button = cva("px-4 py-2 rounded", {
   variants: {
     intent: {
       primary: "bg-blue-500 text-white",
-      secondary: "bg-gray-200 text-gray-900"
-    }
-  }
+      secondary: "bg-gray-200 text-gray-900",
+    },
+  },
 });
 ```
 
@@ -279,6 +289,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Changelog
 
 ### v0.1.0
+
 - Initial release
 - Enhanced language server configuration
 - Multi-framework support
