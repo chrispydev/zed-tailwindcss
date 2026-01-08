@@ -4,7 +4,7 @@ A comprehensive Zed extension that enhances TailwindCSS support across all front
 
 ## Features
 
-- 🚀 **Enhanced Language Server**: Advanced TailwindCSS language server configuration
+- 🚀 **Enhanced Language Server**: Advanced TailwindCSS language server configuration.
 - 🎯 **Multi-Framework Support**: Works with React, Vue, Svelte, Astro, Angular, and more
 - 📝 **Rich Snippets**: 25+ pre-built TailwindCSS snippets for common patterns
 - 🔧 **Smart Configuration**: Automatic detection and configuration for different project types
