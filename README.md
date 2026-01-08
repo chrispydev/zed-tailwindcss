@@ -304,4 +304,4 @@ If you encounter any issues or have suggestions:
 
 - [TailwindLabs](https://tailwindlabs.com) for the amazing TailwindCSS framework and language server
 - [Zed Industries](https://zed.dev) for the fast and extensible editor
-- The Zed community for feedback and contributions
+- The Zed community for feedback and contributions..
